@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABAC survey form</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+		function onSubmit() {
+			alert("Thank you for filling the form!");
+		}
+	</script>
 
 </head>
 <body>
@@ -13,7 +18,7 @@
   <p class="description" id="description">This survey is to collect data related to student's statistication on ABAC.</p>
 
   <div class="container">
-    <form method="post" action='send_email.php' id="survey-form">
+    <form method="POST" id="survey-form" action="#">
       <fieldset>
         <label for="name" id="name-label" >Enter your name: </label>     
         <input type="text" id="name" placeholder="Lu Phone Maw" required/> 
@@ -98,7 +103,8 @@
           </label>
   
   
-          <input type="submit" value="Submit" id="submit" />
+          <input type="submit" value="Submit" id="submit" onclick="onSubmit(); return false;" />
+
           
       </fieldset>
       </form>
