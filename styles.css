@@ -1,0 +1,109 @@
+body{
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(235, 233, 241, 0.25), rgba(249, 249, 249, 0.5)), url(main-bg.jpg);
+
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* overflow: hidden; remove the scroll bar */
+}
+
+p{
+  font-size: 22px;
+
+}
+
+.header, .description{
+  text-align: center;
+  margin: 32px auto;
+
+}
+
+
+form{
+  width: 60vw;
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 300px;
+}
+
+fieldset{
+  padding: 32px 32px;
+  background-color: rgba(156, 41, 41, 0.825);
+  border: none;
+  border-radius: 8px;
+  
+}
+
+label{
+  display: block;
+  margin: 39px 2px 0 0;
+  font-size: 25px;
+}
+
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  font-size: 18px;
+
+}
+
+input, textarea{
+  
+  border: 1px solid #0a0a23;
+  outline: none; 
+  
+}
+
+.inline{
+  width: unset;
+  margin: 0 0 0 0;
+  vertical-align: middle;
+  outline: none;
+
+}
+
+textarea{
+  height: 95px;;
+}
+
+select{
+  height: 35px;
+  outline: none; 
+}
+
+input[type="submit"]{
+  width: 100%;
+  margin: 32px 0;
+  padding: 16px;
+  background-color: #0a0a23;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.inline-label{
+  margin: 16px 0 0 0;
+}
+
+.recommends{
+  margin-bottom: 0px;
+  margin-top: 32px;
+}
+
+
+/* Increase the size of checkbox and radio  */
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.5); /* Increase the size of the input */
+  margin-right: 5px; /* Add some spacing between the input and label */
+}

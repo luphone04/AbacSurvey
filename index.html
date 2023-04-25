@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABAC survey form</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <h1 class="header" id="title">Student Satisfication Form</h1>
+  <p class="description" id="description">This survey is to collect data related to student's statistication on ABAC.</p>
+
+  <div class="container">
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label" >Enter your name: </label>     
+        <input type="text" id="name" placeholder="Lu Phone Maw" required/> 
+  
+        <label for="email" id="email-label" >Enter your email: </label>
+        <input type="email" id="email" required placeholder="u6511157@au.edu"/>
+  
+        <label for="number" id="number-label" >Input your age (years):</label>
+        <input id="number" type="number" name="age" min="17" max="60" required placeholder="18"/>
+  
+          <label for="dropdown">Which faculty are you from?</label>
+            <select name="dropdown" id="dropdown">
+              <option value="(SELECT ONE)">Select your faculty</option>
+              <option value="1">ARCHITECTURE AND DESIGN</option>
+              <option value="2">ARTS</option>
+              <option value="3">BIOTECHNOLOGY</option>
+              <option value="4">COMMUNICATION ARTS</option>
+              <option value="5">ENGINEERING</option>
+              <option value="6">LAW</option>
+              <option value="7">MANAGEMENT AND ECONOMICS</option>
+              <option value="8">MUSIC</option>
+              <option value="9">NURSING SCIENCE</option>
+              <option value="10">SCIENCE & TECHNOLOGY</option>
+            </select>
+          
+  
+          <p class="recommends">Would you recommend Assumption University to a friend?</p>
+  
+          
+          <label for="yes" class="inline-label">
+            <input type="radio" id="yes" name="recommend" value="yes"class="inline" />
+            Yes
+          </label>
+  
+  
+          
+          <label for="no" class="inline-label">
+            <input type="radio" id="no" name="recommend" value="no" class="inline"/>
+            No
+          </label>
+  
+  
+          
+          <label for="maybe" class="inline-label">
+            <input type="radio" id="maybe" name="recommend" value="maybe" class="inline"/>
+            Maybe
+          </label>
+  
+  
+  
+  
+  
+          <label>
+            What's your favourite feature of the campus?
+          </label>
+            <select name="feature" id="feature">
+              <option value="Select-One">Select an option</option>
+              <option value="1">Library</option>
+              <option value="2">Cafeteria</option>
+              <option value="3">Gym</option>
+              <option value="4">Sports field</option>
+              <option value="5">Other</option>
+            </select>
+         
+  
+          <p class="recommends">What would you like to see improved?</p>
+          
+          <label for="campus" class="inline-label">
+            <input type="checkbox" name="Campus" id="improve" value="campus" class="inline">
+            Campus
+          </label>
+  
+  
+          
+          <label for="clothing" class="inline-label">
+            <input type="checkbox" name="Clothing" id="improve" value="clothing" class="inline">
+            Clothing
+          </label>
+  
+          <label for="bio">Any comment or suggestion?
+            <textarea name="bio" id="bio" cols="30" rows="3" placeholder="I would like to suggest the university to ......."></textarea>
+          </label>
+  
+  
+          <input type="submit" value="Submit" id="submit" />
+          
+      </fieldset>
+      </form>
+
+  </div>
+  
+  </body>
+</html>
